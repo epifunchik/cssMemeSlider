@@ -1,0 +1,37 @@
+body{
+    background-color: grey;
+}
+
+.slider-container{
+    background-color: rgb(100, 89, 196);
+    margin-left: auto;
+    margin-right: auto;
+    width: 665px;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+
+}
+.slider-img{
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.slider-info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 665px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.slider-menu{
+    display: flex;
+}
+.slider-block-input{
+    width: 30px;
+}
