@@ -1,0 +1,161 @@
+body{
+    background-color: #161b22;
+}
+
+h1{
+    color: #f6f8fa;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.slider{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+}
+
+.slider-info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.slider-input{
+    visibility: hidden;
+    height: 0;
+    margin-top: -8vh;
+    margin-left: 0;
+    width: 0;
+}
+
+.slide-block{
+    transition: all 3s;
+}
+.img-container{
+    display: flex;
+    margin-top: 40%;
+}
+.slider-img{
+    width: 68vw;
+    border-radius: 3%;
+    height: 70vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.slider-name{
+    overflow: hidden;
+    display: flex;
+    width: 40vw;
+    justify-content: left;
+    flex-direction: column;
+    height: 8vh;
+    transition: all 3s;
+    margin-top: -5%;
+}
+
+.name{
+    transition: all 3s;
+    margin-bottom: 10%;
+}
+
+.slider-menu{
+    display: flex;
+    margin-right: 2%;
+    justify-content: end;
+    margin-top: 3%;
+}
+
+
+
+.label{
+    background-color: #218bff;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.label:hover{
+    cursor: pointer;
+    background-color: #f6f8fa;
+}
+input:checked  ~ .slider-menu .sss{
+    background-color: transparent;
+    border-color: #218bff;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 1%;
+    
+}
+
+input:checked ~ .slider-menu .sss:active{
+    cursor: pointer;
+    border-color: #f6f8fa;
+}
+
+
+#btn2:checked ~ .img-container .img11{
+    margin-left: -71vw;
+}
+#btn2:checked ~ .slider-name .one{
+    margin-top: -20%;
+}
+
+#btn3:checked ~ .img-container .img11{
+    margin-left: -140vw;
+}
+
+#btn3:checked ~ .slider-name .one{
+    margin-top: -37%;
+}
+
+#btn4:checked ~ .img-container .img11{
+    margin-left: -210vw;
+}
+
+#btn4:checked ~ .slider-name .one{
+    margin-top: -56%;
+}
+
+#btn5:checked ~ .img-container .img11{
+    margin-left: -280vw;
+}
+
+#btn5:checked ~ .slider-name .one{
+    margin-top: -75%;
+}
+
+@media screen and (max-width: 1200px){
+    .img-container {
+        margin-top: 80%;
+    }
+    .slider-name{
+        order: 2;
+        font-size: 1em
+    }
+
+    .slider-menu{
+        order: 3;
+        justify-content: center;
+    }
+
+    input:checked ~ .slider-menu .sss {
+        width: 3vw;
+        height: 3vw;
+        margin-top: 2%;
+        border-width: 0.7vw;
+    }
+
+    .slider-name{
+        margin-top: 0;
+        width: 68vw;
+    }
+};
+    
