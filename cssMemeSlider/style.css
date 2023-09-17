@@ -1,37 +1,104 @@
 body{
-    background-color: grey;
+    background-color: #161b22;
 }
 
-.slider-container{
-    background-color: rgb(100, 89, 196);
+h1{
+    color: #f6f8fa;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slider{
     margin-left: auto;
     margin-right: auto;
-    width: 665px;
-    height: 70vh;
-    overflow: hidden;
-    display: flex;
-
-}
-.slider-img{
-    width: 100%;
-    border-radius: 15px;
-    height: 100%;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    width: 70vw;
 }
 
 .slider-info{
     margin-left: auto;
     margin-right: auto;
-    width: 665px;
+    width: 70vw;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    height: 70vh;
+    overflow: hidden;
 }
+
+.slider-input{
+    visibility: hidden;
+    height: 0;
+    margin-top: -8vh;
+    margin-left: 0;
+    width: 0;
+}
+
+.slide-block{
+    transition: all 3s;
+}
+
+.slider-img{
+    width: 68vw;
+    border-radius: 3%;
+    height: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.slider-name{
+    overflow: hidden;
+    display: flex;
+    width: 100px;
+}
+
 
 .slider-menu{
     display: flex;
+    margin-right: 20px;
+    justify-content: end;
+    margin-top: -60px;
 }
-.slider-block-input{
-    width: 30px;
+
+.label{
+    background-color: #218bff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.label:hover{
+    cursor: pointer;
+    background-color: #f6f8fa;
+}
+
+.slider-input:checked ~ .slider-menu > .label{
+    background-color: transparent;
+    border-color: #218bff;
+    border-style: solid;
+    border-width: 4px;
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+}
+
+input:checked ~ .label:hover{
+    cursor: pointer;
+    border-color: #f6f8fa;
+    background-color: aqua;
+}
+
+#btn2:checked ~ .img11{
+    margin-left: -71vw;
+}
+
+#btn3:checked ~ .img11{
+    margin-left: -142vw;
+}
+
+#btn4:checked ~ .img11{
+    margin-left: -213vw;
+}
+
+#btn5:checked ~ .img11{
+    margin-left: -282vw;
 }
